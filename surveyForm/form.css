@@ -1,0 +1,82 @@
+body {
+	
+	font-family: Roboto, sans-serif;
+	font-weight: 300;
+	display: flex;
+	justify-content: center;
+	max-width: 100%;
+}
+
+header {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+h1{
+	font-family: Roboto, sans-serif;
+	font-weight: 900;
+	text-align: center;
+}
+
+header p {
+	text-align: center;
+}
+
+.containerWrapper {
+	display: flex;
+	margin: 1em;
+	justify-content: center;
+	align-items: flex-start;
+}
+
+.container {
+	width: 50%;
+	min-height: 100%;
+	padding: 0.5em;
+}
+
+.label{
+	text-align: right;
+}
+
+ul{
+	list-style: none;
+	padding-left: 0;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+li {
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: flex-end;
+}
+
+input{
+	margin: 0;
+	padding: 0.25em;
+}
+
+label {
+	padding: 0 0 0.5em 0.5em;
+}
+
+#main{
+	background-color: rgba(0, 0, 0, 0.05);
+	border-radius: 5px;
+	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+	min-width: 40%;
+	align-self: center;
+}
+
+textarea{
+	min-width: 60%;
+	min-height: 4em;
+}
+
+@media (max-width: 1240px){
+	#main{
+		min-width: 80%;
+	}
+}
+

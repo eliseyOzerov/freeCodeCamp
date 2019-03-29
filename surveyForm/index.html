@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Form</title>
+  <link rel="stylesheet" type="text/css" href="form.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,500,900" rel="stylesheet"> 
+</head>
+<body>
+  <div id="main">
+    <header>
+      <h1 id="title">Survey form</h1>
+      <p id="description">Help us improve whatever</p>
+    </header>
+    <div id="form_div">
+      <form id="survey-form">
+        <div id="name_div" class="containerWrapper">
+          <div id="nameLabelContainer" class="container label">
+            <label for="name" id="name-label">* Name: </label>
+          </div>
+          <div id="nameInputContainer" class="container">
+            <input type="text" name="name" id="name" placeholder="Enter your name" required>
+          </div>
+        </div>
+        <div id="email_div" class="containerWrapper">
+          <div id="emailLabelContainer" class="container label">
+            <label for="email" id="email-label">* Email: </label>
+          </div>
+          <div id="emailInputContainer" class="container">
+            <input type="email" name="email" id="email" placeholder="Enter your email" required>
+          </div>
+        </div>
+        <div id="age_div" class="containerWrapper">
+          <div id="ageLabelContainer" class="container label">
+            <label for="age" id="number-label">* Age: </label>
+          </div>
+          <div id="ageInputContainer" class="container">
+            <input type="number" name="age" id="number" placeholder="Age" min="18" max="99"required>
+          </div>
+        </div>
+        <div id="currentRole_div" class="containerWrapper">
+          <div id="roleLabelContainer" class="container label">
+            <label for="role">Which option best describes your current role? </label>
+          </div>
+          <div id="roleDropdownContainer" class="container">
+            <select id="dropdown" name="role">
+              <option disabled="" value="">Select an option</option>
+              <option value="student">Student</option>
+              <option value="developer">Developer</option>
+              <option value="CEO">CEO</option>
+            </select>
+          </div>
+        </div>
+        <div id="recommend_div" class="containerWrapper">
+          <div id="recommendLabelContainer" class="container label">
+            <label for="recommend"> * How likely is that you would recommend freeCodeCamp to a friend? </label>
+          </div>
+          <div name="recommendRadioContainer" class="container">
+            <ul id="recommend" name="recommend">
+              <li>
+                <label>Definitely</label>
+                  <input type="radio" name="rec_radio" checked value="1">
+              </li>
+              <li>
+                <label>Maybe</label>
+                  <input type="radio" name="rec_radio" value="2">
+              </li>
+              <li>
+                <label>Not sure</label>
+                  <input type="radio" name="rec_radio" value="3">
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div id="favorite_div" class="containerWrapper">
+          <div id="favoriteLabelContainer" class="container label">
+            <label for="favorite">What do you like most in FCC? </label>
+          </div>
+          <div id="favoriteSelectContainer" class="container">
+            <select id="likemost" name="favorite">
+              <option disabled value="">Select an option</option>
+              <option value="challenges">Challenges</option>
+              <option value="projects">Projects</option>
+              <option value="community">Community</option>
+              <option value="open source">Open source</option>
+            </select>
+          </div>
+        </div>
+        <div id="improvements_div" class="containerWrapper">
+          <div id="improvementsLabelContainer" class="container label">
+            <label for="improvements">Things that should be improved in the future</label>
+          </div>
+          <div id="improvementsUlContainer" class="container">
+            <ul id="improvements">
+              <li>
+                <label for="frontend">Front-end projects</label>
+                <input type="checkbox" name="impr_check" value="1">
+              </li>
+              <li>
+                <label for="backend">Back-end projects</label>
+                <input type="checkbox" name="impr_check" value="2">
+              </li>
+              <li>
+                <label for="datavis">Data visualization</label>
+                <input type="checkbox" name="impr_check" value="3">
+              </li>
+              <li>
+                <label for="challenges">Challenges</label>
+                <input type="checkbox" name="impr_check" value="4">
+              </li>
+              <li>
+                <label for="opensource">Open source community</label>
+                <input type="checkbox" name="impr_check" value="5">
+              </li>
+              <li>
+                <label for="gitterhelp">Gitter help rooms</label>
+                <input type="checkbox" name="impr_check" value="6">
+              </li>
+              <li>
+                <label for="videos">Videos</label>
+                <input type="checkbox" name="impr_check" value="7">
+              </li>
+              <li>
+                <label for="meetups">City meetups</label>
+                <input type="checkbox" name="impr_check" value="8">
+              </li>
+              <li>
+                <label for="wiki">Wiki</label>
+                <input type="checkbox" name="impr_check" value="9">
+              </li>
+              <li>
+                <label for="forum">Forum</label>
+                <input type="checkbox" name="impr_check" value="10">
+              </li>
+              <li>
+                <label for="courses">Additional courses</label>
+                <input type="checkbox" name="impr_check" value="11">
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div id="comment_div" class="containerWrapper">
+          <div id="commentLabelContainer" class="container label">
+            <label for="comment">Any comments or suggestions? </label>
+          </div>
+          <div id="commentTextareaContainer" class="container">
+            <textarea placeholder="comment" name="comment"></textarea>
+          </div>
+        </div>
+        <div id="button_div" class="containerWrapper">
+          <button type="submit" id="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+  </div>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>

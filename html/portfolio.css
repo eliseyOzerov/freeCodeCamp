@@ -1,0 +1,106 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	transition: all 0.5s ease;
+	color: #29354e;
+}
+
+html {
+	font-size: 16px;
+}
+
+h1, h2, h3, h4, h5, h6{
+	font-family: Montserrat, sans-serif;
+	font-weight: 700;
+}
+
+p, li, span, a{
+	font-family: Roboto Slab, serif;
+	font-weight: 300;
+	font-size: 1.2em;
+}
+
+i:hover, a:hover{
+	color:#fca311;
+}
+
+#header{
+	position: fixed;
+	top: 0;
+	height: 4em;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	width: 100%;
+	background-color: #fff;
+	padding: 1em;
+	z-index: 1000;
+}
+
+#header nav a{
+	font-family: Lato, sans-serif;
+	font-weight: 400;
+	font-size: 1.2em;
+	text-decoration: none;
+	margin: 2em;
+}
+
+#home{
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+#home-content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+
+#name {
+	font-size: 3em;
+}
+
+.contact {
+	align-self: center;
+}
+
+#social{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+#social i{
+	font-size: 2em;
+	margin: 0.7em 0 0.5em 0;
+}
+
+.fas{
+	position: absolute;
+	bottom: 3em;
+	font-size: 2em;
+	animation: bounce 2s infinite;
+}
+
+@keyframes bounce{
+	0% {bottom: 3.25em;}
+	50% {bottom: 2.75em;}
+	100% {bottom: 3.25em;}
+	
+}
+
+#projects{
+	display: flex;
+	height: 100vh;
+	align-items: center;
+}	
+
+#about {
+	width: 20vw;
+	min-width: 350px;
+}
